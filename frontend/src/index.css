@@ -1,0 +1,470 @@
+
+.signup-btn {
+  background-color: white;
+  padding: 10px;
+  border-radius: 3px;
+  text-decoration: none;
+  box-shadow: 0px 2px 5px 1px;
+}
+
+.signup-btn:active {
+  background-color: white;
+  box-shadow: 0px 2px 5px 1px;
+  transform: translateY(5px);
+}
+
+.signup-btn:hover {
+  background-color: #87CEEB;
+}
+
+.login-btn {
+  background-color: white;
+  padding: 10px;
+  border-radius: 3px;
+  text-decoration: none;
+  box-shadow: 0px 2px 5px 1px;
+}
+
+.login-btn:active {
+  background-color: white;
+  box-shadow: 0px 2px 5px 1px;
+  transform: translateY(5px);
+}
+
+.login-btn:hover {
+  background-color: #87CEEB;
+}
+
+.nav-bar {
+  width: 100%;
+  position: fixed;
+  background-color: #0036db;
+  font-family: sans-serif;
+  height: 100px;
+  z-index: 27;
+  border-bottom: 2px solid black;
+}
+
+div.attractions-body {
+  background-color: #effaff;
+  margin-left: 50%;
+  width: 50%;
+  /* margin-top: 15%; */
+  font-size: 40px;
+
+  color: blue;
+  padding-top: 0;
+
+  color: white;
+  padding-top: 0;
+  /* color: white; */
+  padding-bottom: 5%;
+  max-width: 50%;
+  position: absolute;
+  top: 89px;
+  /* border: 1px solid black; */
+  border-left: 1px solid gray;
+  border-bottom: 1px solid black;
+}
+
+
+
+
+
+.attractions-explore {
+  font-style: italic;
+  font-family: Rockwell;
+  font-size: 42px;
+}
+
+.attractions-header {
+  padding-top: 3%;
+  /* margin-top: 100px; */
+  height: 130px;
+  text-align: center;
+  /* display: flex; */
+  font-family: Rockwell;
+  font-size: 40px;
+  font-weight: bold;
+  /* color: #FFFACD; */
+  color: ##F5F5F5;
+  background-size: 100%;
+  background-position: center;
+  background-image: url( https://s22.postimg.cc/vw094vlbl/golden_Gate_Bridge_Background.jpg);
+  border-bottom: 2px solid black;
+}
+
+.attractions-name {
+  font-weight: bold;
+}
+
+.attractions-desc {
+  font-style: italic;
+  padding-right: 5%;
+}
+
+.all-attraction-photos {
+  max-width: 50%;
+  border: 1px solid gray;
+}
+
+ul.test-list {
+  font-size: 20px;
+  color: black;
+
+}
+
+
+p.attractions-desc {
+  font-size: 16px;
+  color: black;
+}
+
+
+.current-coords {
+  font: blue;
+}
+
+.search-btn {
+  padding-top: 2px;
+  padding-bottom: 4px;
+  margin-top: 4px;
+  color: white;
+  width: 110px;
+background: black;
+border-radius: 0;
+font-weight: bold;
+border: none;
+}
+
+.search-btn:hover {
+  background: green;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  /* background-size: 100%;
+  background-repeat: no-repeat; */
+  /* background: url(images/bg.jpg) no-repeat center center fixed;  */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: no-repeat center center fixed url("https://wallpapermemory.com/uploads/433/san-francisco-background-hd-1080p-493254.jpg");
+}
+
+span.arrow {
+  margin-left: 15px;
+}
+
+img.bc-logo {
+  background-color: aliceblue;
+  /* padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+  padding-right: 1%; */
+  /* padding: 3px 3px 3px 3px; */
+  border: 1px black solid;
+  opacity: 0.9;
+  position: fixed;
+  margin-top: 12px;
+  margin-left: 26px;
+  position: absolute;
+  margin-top: 21px;
+  margin-bottom: 2%;
+  margin-left: 18px;
+  z-index: 40;
+  height: 44px;
+}
+
+div.or {
+  cursor: initial;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+div.sessionLinks:hover {
+  cursor: pointer;
+}
+
+div.sessionLinks{
+  position:fixed;
+  /* position: relative; */
+  width: 500px;
+  /* margin-right: 10px; */
+  /* align-content: space-between; */
+  display: flex;
+  text-align: center;
+  z-index: 26;
+  background: none;
+  margin-left: 80%;
+  margin-top: 30px;
+}
+
+span.attractions {
+  margin-top: -2px;
+  font-size: 18px;
+  /* font-weight: bold; */
+  color: black ;
+    margin-left: 10px;
+    clear: left;
+}
+
+
+form.budget {
+  opacity: 0.9;
+  position: fixed;
+  max-width: 100px;
+  z-index: 32;
+  margin-left: 1.5%;
+  margin-top: 140px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+button.budget {
+  margin-top: -2px;
+  margin-left: 3px;
+}
+
+div.current-coords {
+  visibility:hidden;
+}
+
+input[type=text].budget {
+  margin-top: 23px;
+  max-width: 130px;
+}
+
+button.logout-button {
+  margin-left: 25px;
+  margin-right: 100px;
+  /* position: absolute; */
+  margin-top: 15px;
+  z-index: 20;
+  height: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px 1px;
+  font-weight: bold;
+  font-size: 12px;
+  width: 100px;
+}
+
+.logout-button:active {
+  background-color: white;
+  box-shadow: 0px 2px 5px 1px;
+  transform: translateY(5px);
+}
+
+.logout-button:hover {
+  background-color: #87CEEB;
+}
+
+div.greeting {
+  margin-top: -5%;
+  margin-left: 85%;
+  display: inline-flex;
+  z-index: 22;
+  color: white;
+  /* font-size: 10px; */
+}
+
+div.logan {
+  width: 500px;
+}
+
+div.map {
+  /* clear: map; */
+  /* opacity: 0.2; */
+  /* position: absolute; */
+  bottom: 50px;
+  /* margin: 20px 8px 40px 20px; */
+  /* margin-left: 5px; */
+  max-width: 50%;
+  /* height: 100%; */
+  z-index: 9;
+  position: fixed;
+  top: 89px;
+  border: 1px solid black;
+  border-left: 1px solid gray;
+  border-bottom: 1px solid black;
+  /* padding: 0 0 0 0; */
+}
+
+
+span.disclaimer {
+  border-top: 1px solid lightgrey;
+  left: clear;
+  position: absolute;
+  background-color: #4286f4;
+  text-align: center;
+  font-size: 10px;
+  color: gray;
+  padding-top: 10px;
+  background-color: white;
+  position: fixed;
+  top: 95.5%;
+  min-height: 40px;
+  width: 100%;
+  z-index: 30;
+}
+
+div.nav-bar {
+  height: 89px
+}
+
+div.map-container {
+  display: flex;
+  background-color: white;
+}
+
+h1.current-user {
+  /* position: fixed; */
+  /* top: 35px; */
+  font-size: 20px;
+  z-index: 25;
+  font-style: italic;
+}
+
+div.bart-venture {
+  margin-top: 0;
+  /* margin-left: 10px; */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helevetica Neue', sans-serif;
+  color: white;
+  font-size: 40px;
+  font-weight: 300;
+  width: 250px;
+}
+
+/* navbar here */
+
+
+div.header {
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  display: flex;
+  /* opacity: 0.8; */
+  border-bottom: 4px solid black;
+   position: fixed;
+   top: 0;
+   z-index: 10;
+  height: 35px;
+  width: 100%;
+  /* text-align: center; */
+  padding-left: 100px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin: 0 0 0 0;
+  color:white;
+  background-color: #4286f4;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+  span.logan {
+    width: auto;
+    margin-right: 24px;
+    font-size: 20px;
+    margin-top: -8px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+  }
+
+
+a:link {
+  color: black;
+  cursor: pointer;
+  /* text-decoration: none; */
+}
+a:link.bart-ventures-link {
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+
+}
+.login-group {
+    /* margin-top: 100px;
+
+    text-align: center;
+    display: flex; */
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 1%;
+    /* width:30em; */
+    /* height:18em; */
+    margin-top: -7em; /*set to a negative number 1/2 of your height*/
+    margin-left: -12em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    background: rgba(255,255,255,0.8);
+    border: 1px solid black;
+    align-content: center;
+    /* margin-left: 30%; */
+    margin-right: 30%;
+    padding-left:  42px;
+    padding-top: 60px;
+    padding-bottom: 34px;
+}
+
+ Link.alternative-button {
+   background-color: black;
+ }
+
+ input[type=text], input[type=password], input[type=submit] {
+   font-size: 15px;
+  text-align: center;
+  width: 300px;
+  height: 32px;
+  margin-bottom: 20px;
+   /* margin-left: 40px; */
+ }
+
+ input[type=submit] {
+   /* padding-top: 8px; */
+   color: white;
+   background-color: #4286f4;
+ }
+
+
+ body{
+    width: 100%;
+
+    overflow-x: hidden;
+}
+
+.spinner{
+    width: 80px;
+    height: 80px;
+
+    border: 2px solid #f3f3f3;
+    border-top:3px solid black;
+    border-radius: 100%;
+
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    margin: auto;
+    z-index: 100;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+#overlay{
+  height:100%;
+  width:100%;
+  background:white;
+  position:fixed;
+  left:0;
+  top:0;
+ }
