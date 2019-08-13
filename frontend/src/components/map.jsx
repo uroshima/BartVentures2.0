@@ -27,7 +27,7 @@ class BartMap extends React.Component {
             <GoogleMap
             defaultCenter = { { lat: 37.773972, lng: -122.431297 }}
             defaultZoom = { 11 }
-
+            >
             </GoogleMap>
         ))
         return (

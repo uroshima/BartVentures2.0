@@ -44,7 +44,7 @@ class Attractions extends React.Component {
     if (this.props.display.length !== 0 && currentAttraction!==undefined) {
       displayAttractions =
       <div>
-        <button onClick={this.props.deleteDisplay}>Back to Index</button>
+        <button onClick={this.props.deleteDisplay}>Back</button>
         <div className="displayAttractions">
           <p className="attractions-name">{currentAttraction.name}</p>
             <img className="all-attraction-photos" src={ currentAttraction.image } />
