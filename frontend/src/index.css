@@ -14,7 +14,7 @@
 }
 
 .signup-btn:hover {
-  background-color: #87CEEB;
+  background-color: lightgrey;
 }
 
 .login-btn {
@@ -32,7 +32,7 @@
 }
 
 .login-btn:hover {
-  background-color: #87CEEB;
+  background-color: lightgrey;
 }
 
 .go-btn {
@@ -104,7 +104,7 @@ div.attractions-body {
   font-size: 40px;
   font-weight: bold;
   /* color: #FFFACD; */
-  color: ##F5F5F5;
+  color: #F5F5F5;
   background-size: 100%;
   background-position: center;
   background-image: url( https://s22.postimg.cc/vw094vlbl/golden_Gate_Bridge_Background.jpg);
@@ -286,7 +286,8 @@ button.logout-button {
 .logout-button:hover {
   /* background-color: #87CEEB; */
   cursor: pointer;
-  opacity: 0.7;
+  /* opacity: 0.7; */
+  background-color: lightgrey;
 }
 
 div.greeting {
