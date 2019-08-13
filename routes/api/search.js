@@ -26,13 +26,17 @@ router.get("/:budget/:loc", (req,res) => {
        };
        stations.push(stationObj);
      }
-
-
+     
+    //  let filteredStations = stations.filter(station => {
+    //    station.abbr == '12TH'
+    //    || station.abbr == '16TH'
+    //   })
+    //    console.log("HEEERREEE ARREEEE THEEE STATIONSSSS", filteredStations)
      //call api for each bart station and
      //filters the ones with fare higher than budget
 
     let promiseArray = [];
-    stations.forEach(station => {
+    stations.slice(0, 10).forEach(station => {
       let fareAPIUrl = "http://api.bart.gov/api/sched.aspx?cmd=fare&orig=" + req.params.loc +"&dest=" + station.abbr + "&date=today&key=QMBS-5LIW-9J2T-DWE9&json=y";
       promiseArray.push(axios.get(fareAPIUrl).then((fareResponse) => {
           let farePriceToDest = fareResponse.data.root.trip.fare;

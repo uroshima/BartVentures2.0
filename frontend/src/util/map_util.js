@@ -12,13 +12,13 @@ export const getBartStations = (budget, currentBartStation) => dispatch => {
   axios
     .get(`/api/search/${budget}/${currentBartStation}`)
     .then( res=> {
-      console.log(res);
+      console.log("res: ", res);
 
       dispatch(receiveBudgetBartStations(res))
       dispatch(receiveAttractions(res));
     }).then( res => { dispatch(deleteDisplay()) })
     .catch(err => {
-      console.log(err);
+      console.log("err: ", err);
       dispatch({
         type:GET_ERRORS,
         payload: err.response.data
@@ -30,7 +30,7 @@ export const getBartStations = (budget, currentBartStation) => dispatch => {
 export const receiveAttractions = attractions => {
 
   //deletes bart objects from attraction objects
-
+  console.log("atractions: ", attractions);
   let resultAttractions = [];
   for(let i = 0 ; i < attractions.data.length; i++) {
       let currentAttraction = attractions.data[i];

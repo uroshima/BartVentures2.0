@@ -35,7 +35,7 @@ class Search extends React.Component {
 
   displayBartSelectorForm() {
         return (
-          <select value = {this.state.value} onChange = {this.handleChange}>
+          <select style={{marginTop: 250 + "px"}} value = {this.state.value} onChange = {this.handleChange}>
              <option value="start" disabled>Choose starting point</option>
              <option value="16TH">16th St. Mission</option>
              <option value="12TH">12th St. Oakland City Center</option>
@@ -97,11 +97,11 @@ class Search extends React.Component {
     return (
       <div>
         <form className='budget'>
-       $
-         <input className='budget'  type = "text" onChange={this.update("budget")} value={this.state.budget} placeholder="Enter your budget" />
         {bartSelector}
-
-         <button className="search-btn" onClick={this.handleSubmit}>Show me places to go!</button>
+        <div className="budget_and_go_button">
+          <input className='budget'  type = "text" onChange={this.update("budget")} value={this.state.budget} placeholder="Enter your budget" />
+          <button className="go-btn" onClick={this.handleSubmit}>GO</button>
+        </div>
        </form>
 
       </div>
