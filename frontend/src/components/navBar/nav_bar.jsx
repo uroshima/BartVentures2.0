@@ -23,9 +23,11 @@ class NavBar extends React.Component {
         {/* <span className='attractions'>to see the attractions nearby</span> */}
         </div>;
     } else {
+      let firstName = this.props.currentUser.split(' ');
+      firstName = firstName[0];
       return (
-        <div className='greeting'>
-          <h1 className='current-user' >Hello, {this.props.currentUser}</h1>
+        <div className='sessionLinks'>
+          <h1 className='current-user' >{firstName}</h1>
             <button className='logout-button' onClick= {this.props.logoutUser}>Log out</button>
         </div>
       );

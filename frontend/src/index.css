@@ -267,7 +267,7 @@ button.logout-button {
   margin-left: 25px;
   margin-right: 100px;
   /* position: absolute; */
-  margin-top: 15px;
+  margin-top: 10px;
   z-index: 20;
   height: 30px;
   border-radius: 5px;
@@ -284,7 +284,9 @@ button.logout-button {
 }
 
 .logout-button:hover {
-  background-color: #87CEEB;
+  /* background-color: #87CEEB; */
+  cursor: pointer;
+  opacity: 0.7;
 }
 
 div.greeting {
@@ -351,6 +353,11 @@ h1.current-user {
   font-size: 20px;
   z-index: 25;
   font-style: italic;
+  color: black;
+}
+
+h1.current-user:hover {
+  cursor: auto;
 }
 
 div.bart-venture {
