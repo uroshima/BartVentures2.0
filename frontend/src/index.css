@@ -55,7 +55,7 @@
 .nav-bar {
   width: 100%;
   position: fixed;
-  /* background-color: #0036db; */
+  background-color: white;
   font-family: sans-serif;
   height: 100px;
   z-index: 27;
@@ -169,7 +169,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  /* background: no-repeat center center fixed url("https://wallpapermemory.com/uploads/433/san-francisco-background-hd-1080p-493254.jpg"); */
+  background: no-repeat center center fixed url("https://wallpapermemory.com/uploads/433/san-francisco-background-hd-1080p-493254.jpg");
 }
 
 span.arrow {
