@@ -367,11 +367,11 @@ div.bart-venture {
 
 
 div.header {
-  border-left: 1px solid gray;
-  border-right: 1px solid gray;
+  /* border-left: 1px solid gray;
+  border-right: 1px solid gray; */
   display: flex;
   /* opacity: 0.8; */
-  border-bottom: 4px solid black;
+  /* border-bottom: 4px solid black; */
    position: fixed;
    top: 0;
    z-index: 10;
