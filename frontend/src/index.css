@@ -36,6 +36,7 @@
 }
 
 .go-btn {
+  width: 100px;
   background-color: white;
   padding: 10px;
   border-radius: 3px;
@@ -259,7 +260,7 @@ div.current-coords {
 
 input[type=text].budget {
   /* margin-top: 5px; */
-  max-width: 130px;
+  max-width: 60px;
 }
 
 button.logout-button {
