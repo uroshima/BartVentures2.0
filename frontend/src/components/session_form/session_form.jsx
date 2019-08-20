@@ -45,7 +45,7 @@ class SessionForm extends React.Component {
         <div className='signup-group'>
           <label>
             {/* Enter Name: */}
-              <input placeholder='First and Last Name' type="text" value = {this.state.name} onChange={(e)=>this.update(e,"name")} />
+              <input placeholder='First Name' type="text" value = {this.state.name} onChange={(e)=>this.update(e,"name")} />
           </label>
           <br/>
           <label>
@@ -78,7 +78,7 @@ class SessionForm extends React.Component {
         <form onSubmit={this.handleSubmit}>
         <label>
             {/* Enter Email: */}
-            <input type="text" placeholder='Email or Phone Number' value = {this.state.email} onChange={(e)=>this.update(e,"email")}/>
+            <input type="text" placeholder='Email' value = {this.state.email} onChange={(e)=>this.update(e,"email")}/>
         </label>
         <br/>
         <label>
