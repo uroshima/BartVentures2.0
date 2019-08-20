@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
-/*global google*/
+
 const mapOptions = {
   center: {
     lat: 37.773972,
@@ -11,16 +11,6 @@ const mapOptions = {
 };
 
 class BartMap extends React.Component {
-    // initMap() {
-    //     () => (
-    //     map = new google.maps.Map(document.getElementById('map'), {
-    //         center: { lat: 37.773972, lng: -122.431297 },
-    //         zoom: 8
-    //     })
-    //     );
-    // }
-
-//commentm
     render() {
 
         const GoogleMapExample = withGoogleMap(props => (
@@ -42,5 +32,4 @@ class BartMap extends React.Component {
     }
 }
 
-// export default withRouter(BartMap);
 export default BartMap;

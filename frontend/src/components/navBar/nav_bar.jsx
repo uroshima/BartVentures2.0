@@ -18,9 +18,6 @@ class NavBar extends React.Component {
           <Link className="signup-btn" to="/signup">
             Sign Up
           </Link>
-          {/* <br/> */}
-        {/* <span className='arrow'> => </span> */}
-        {/* <span className='attractions'>to see the attractions nearby</span> */}
         </div>;
     } else {
       let firstName = this.props.currentUser.split(' ');
@@ -38,15 +35,13 @@ class NavBar extends React.Component {
   render() {
     const displayLinks = this.displayCorrectSessionButton();
     return <div className="nav-bar">
-        {/* <img className="bc-logo" src="http://sohanews.sohacdn.com/k:2016/1-1452151932916/tg-dang-co-thoi-co-vang-de-cho-trieu-tien-biet-ho-da-tinh-sai.jpg" alt="" /> */}
-
-      <div className='header'><Link className='bart-ventures-link' to="/">
-        <div className='bart-venture'>Bart Ventures</div>
-          {/* <h1 className="header">Bart Ventures</h1> */}
-        </Link>
-      </div>
-        {displayLinks}
-      </div>;
+              <div className='header'>
+                <Link className='bart-ventures-link' to="/">
+                  <div className='bart-venture'>Bart Ventures</div>
+                </Link>
+              </div>
+              {displayLinks}
+           </div>;
   }
 }
 
