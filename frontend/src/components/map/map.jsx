@@ -1,41 +1,19 @@
-import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
+import React from 'react';
 import { withGoogleMap, GoogleMap , Marker } from 'react-google-maps';
-/*global google*/
-const mapOptions = {
-  center: {
-    lat: 37.773972,
-    lng: -122.431297
-  },
-  zoom: 13
-};
-
 
 class BartMap extends React.Component {
     constructor(props) {
       super(props);
-      let centerOfMap = this.props.center ;
-      let mapZoom = 10;
-
-        this.state = {
-            center: centerOfMap,
-            zoom: 13
-        };
-
+      let centerOfMap = this.props.center;
+      this.state = {
+          center: centerOfMap,
+          zoom: 13
+      };
     }
-    // initMap() {
-    //     () => (pull
-    //     map = new google.maps.Map(document.getElementById('map'), {
-    //         center: { lat: 37.773972, lng: -122.431297 },
-    //         zoom: 8
-    //     })
-    //     );
-    // }
-
 
     render() {
         let that = this;
-        if (this.props.center === undefined || this.props.center.length==0) {
+        if (this.props.center === undefined || this.props.center.length === 0) {
           this.centerOfMap =  {
               lat: 37.773972,
               lng: -122.431297
@@ -102,5 +80,3 @@ class BartMap extends React.Component {
     }
 }
 export default BartMap;
-
-// export default withRouter(BartMap);

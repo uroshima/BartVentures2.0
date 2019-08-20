@@ -4,9 +4,6 @@ import Search from './search/search.jsx';
 import Attractions from './attractions/attractions.jsx';
 
 class SplashPage extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   //default to get all bart st
   componentDidMount() {

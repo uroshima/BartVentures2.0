@@ -1,6 +1,4 @@
 import React from 'react';
-/*global google*/
-
 
 class Search extends React.Component {
   constructor(props) {
@@ -21,7 +19,7 @@ class Search extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    if(this.state.budget === '' || isNaN(parseInt(this.state.budget)) || this.state.value==='start') {
+    if(this.state.budget === '' || isNaN(parseInt(this.state.budget, 10)) || this.state.value==='start') {
       return;
     }
 

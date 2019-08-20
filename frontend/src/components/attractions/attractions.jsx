@@ -1,8 +1,4 @@
 import React from 'react';
-import BartMap from '../map/map.jsx';
-import attractions from '../seeds.jsx';
-
-//comment
 
 class Attractions extends React.Component {
   constructor(props) {
@@ -32,7 +28,7 @@ class Attractions extends React.Component {
       return (
         <div key = {idx} className="displayAttractions">
           <p className="attractions-name">{attr.name}</p>
-            <img className="all-attraction-photos" src={ attr.image } />
+            <img className="all-attraction-photos" src={ attr.image } alt=""/>
             <p className="attractions-desc">{attr.description}</p>
             <br></br><br></br>
         </div>
@@ -47,7 +43,7 @@ class Attractions extends React.Component {
         <button onClick={this.props.deleteDisplay}>Back</button>
         <div className="displayAttractions">
           <p className="attractions-name">{currentAttraction.name}</p>
-            <img className="all-attraction-photos" src={ currentAttraction.image } />
+            <img className="all-attraction-photos" src={ currentAttraction.image } alt=""/>
               <p className="attractions-desc">{currentAttraction.description}</p>
           <br></br><br></br>
         </div>
