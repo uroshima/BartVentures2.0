@@ -41,7 +41,7 @@
     "react-geolocated": "^2.4.0",
     "react-google-maps": "^9.4.5",
     "request": "^2.88.0",
-    "validator": "^10.7.0"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.3"
